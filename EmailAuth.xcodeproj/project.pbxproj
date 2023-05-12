@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A13610E72A0E752700B44B9C /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13610E62A0E752700B44B9C /* SignInEmailView.swift */; };
+		A13610EC2A0E786B00B44B9C /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13610EB2A0E786B00B44B9C /* AuthManager.swift */; };
+		A1E1B6AC29FFEEDF000F62CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E1B6AB29FFEEDF000F62CA /* AppDelegate.swift */; };
+		A1E1B6AE29FFEEDF000F62CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E1B6AD29FFEEDF000F62CA /* SceneDelegate.swift */; };
+		A1E1B6B229FFEEE2000F62CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1E1B6B129FFEEE2000F62CA /* Assets.xcassets */; };
+		A1E1B6B529FFEEE2000F62CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1E1B6B429FFEEE2000F62CA /* Preview Assets.xcassets */; };
+		A1E1B6B829FFEEE2000F62CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E1B6B629FFEEE2000F62CA /* LaunchScreen.storyboard */; };
+		A1E1B6C129FFEFE2000F62CA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1E1B6C029FFEFE1000F62CA /* GoogleService-Info.plist */; };
+		A1E1B6C529FFF2B1000F62CA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A1E1B6C429FFF2B1000F62CA /* FirebaseAuth */; };
+		A1E1B6C729FFF2B1000F62CA /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A1E1B6C629FFF2B1000F62CA /* FirebaseFirestore */; };
+		A1E1B6CA29FFF853000F62CA /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E1B6C929FFF853000F62CA /* SwiftUIView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A13610E62A0E752700B44B9C /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
+		A13610EB2A0E786B00B44B9C /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		A1E1B6A829FFEEDF000F62CA /* EmailAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmailAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E1B6AB29FFEEDF000F62CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1E1B6AD29FFEEDF000F62CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A1E1B6B129FFEEE2000F62CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1E1B6B429FFEEE2000F62CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A1E1B6B729FFEEE2000F62CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1E1B6B929FFEEE2000F62CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1E1B6C029FFEFE1000F62CA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A1E1B6C929FFF853000F62CA /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1E1B6A529FFEEDF000F62CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1E1B6C529FFF2B1000F62CA /* FirebaseAuth in Frameworks */,
+				A1E1B6C729FFF2B1000F62CA /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1E1B69F29FFEEDF000F62CA = {
+			isa = PBXGroup;
+			children = (
+				A1E1B6AA29FFEEDF000F62CA /* EmailAuth */,
+				A1E1B6A929FFEEDF000F62CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1E1B6A929FFEEDF000F62CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1E1B6A829FFEEDF000F62CA /* EmailAuth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1E1B6AA29FFEEDF000F62CA /* EmailAuth */ = {
+			isa = PBXGroup;
+			children = (
+				A1E1B6C929FFF853000F62CA /* SwiftUIView.swift */,
+				A13610EB2A0E786B00B44B9C /* AuthManager.swift */,
+				A13610E62A0E752700B44B9C /* SignInEmailView.swift */,
+				A1E1B6AB29FFEEDF000F62CA /* AppDelegate.swift */,
+				A1E1B6AD29FFEEDF000F62CA /* SceneDelegate.swift */,
+				A1E1B6B129FFEEE2000F62CA /* Assets.xcassets */,
+				A1E1B6B629FFEEE2000F62CA /* LaunchScreen.storyboard */,
+				A1E1B6B929FFEEE2000F62CA /* Info.plist */,
+				A1E1B6C029FFEFE1000F62CA /* GoogleService-Info.plist */,
+				A1E1B6B429FFEEE2000F62CA /* Preview Assets.xcassets */,
+				A1E1B6B329FFEEE2000F62CA /* Preview Content */,
+			);
+			path = EmailAuth;
+			sourceTree = "<group>";
+		};
+		A1E1B6B329FFEEE2000F62CA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1E1B6A729FFEEDF000F62CA /* EmailAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1E1B6BC29FFEEE2000F62CA /* Build configuration list for PBXNativeTarget "EmailAuth" */;
+			buildPhases = (
+				A1E1B6A429FFEEDF000F62CA /* Sources */,
+				A1E1B6A529FFEEDF000F62CA /* Frameworks */,
+				A1E1B6A629FFEEDF000F62CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmailAuth;
+			packageProductDependencies = (
+				A1E1B6C429FFF2B1000F62CA /* FirebaseAuth */,
+				A1E1B6C629FFF2B1000F62CA /* FirebaseFirestore */,
+			);
+			productName = EmailAuth;
+			productReference = A1E1B6A829FFEEDF000F62CA /* EmailAuth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1E1B6A029FFEEDF000F62CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					A1E1B6A729FFEEDF000F62CA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = A1E1B6A329FFEEDF000F62CA /* Build configuration list for PBXProject "EmailAuth" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1E1B69F29FFEEDF000F62CA;
+			packageReferences = (
+				A1E1B6C329FFF2B0000F62CA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = A1E1B6A929FFEEDF000F62CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1E1B6A729FFEEDF000F62CA /* EmailAuth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1E1B6A629FFEEDF000F62CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1E1B6B829FFEEE2000F62CA /* LaunchScreen.storyboard in Resources */,
+				A1E1B6C129FFEFE2000F62CA /* GoogleService-Info.plist in Resources */,
+				A1E1B6B529FFEEE2000F62CA /* Preview Assets.xcassets in Resources */,
+				A1E1B6B229FFEEE2000F62CA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1E1B6A429FFEEDF000F62CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1E1B6AC29FFEEDF000F62CA /* AppDelegate.swift in Sources */,
+				A1E1B6AE29FFEEDF000F62CA /* SceneDelegate.swift in Sources */,
+				A1E1B6CA29FFF853000F62CA /* SwiftUIView.swift in Sources */,
+				A13610E72A0E752700B44B9C /* SignInEmailView.swift in Sources */,
+				A13610EC2A0E786B00B44B9C /* AuthManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A1E1B6B629FFEEE2000F62CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1E1B6B729FFEEE2000F62CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1E1B6BA29FFEEE2000F62CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1E1B6BB29FFEEE2000F62CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1E1B6BD29FFEEE2000F62CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"EmailAuth/Preview Content\"";
+				DEVELOPMENT_TEAM = U4435SWTUH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = EmailAuth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.e.EmailAuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1E1B6BE29FFEEE2000F62CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"EmailAuth/Preview Content\"";
+				DEVELOPMENT_TEAM = U4435SWTUH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = EmailAuth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.e.EmailAuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1E1B6A329FFEEDF000F62CA /* Build configuration list for PBXProject "EmailAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1E1B6BA29FFEEE2000F62CA /* Debug */,
+				A1E1B6BB29FFEEE2000F62CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1E1B6BC29FFEEE2000F62CA /* Build configuration list for PBXNativeTarget "EmailAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1E1B6BD29FFEEE2000F62CA /* Debug */,
+				A1E1B6BE29FFEEE2000F62CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1E1B6C329FFF2B0000F62CA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1E1B6C429FFF2B1000F62CA /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1E1B6C329FFF2B0000F62CA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A1E1B6C629FFF2B1000F62CA /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1E1B6C329FFF2B0000F62CA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A1E1B6A029FFEEDF000F62CA /* Project object */;
+}
